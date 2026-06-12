@@ -1,0 +1,39 @@
+EfficientNet-B0 Accuracy-Balanced | OCT 3-Sinif | VS Code Local
+======================================================================
+
+IMAGE-LEVEL REPORT
+              precision    recall  f1-score   support
+
+      NORMAL     0.9559    0.9914    0.9733      9424
+          DR     0.9466    0.7675    0.8477      1824
+         AMD     0.9933    0.9770    0.9851       304
+
+    accuracy                         0.9557     11552
+   macro avg     0.9653    0.9120    0.9354     11552
+weighted avg     0.9554    0.9557    0.9538     11552
+
+Balanced Accuracy: 0.9120
+Macro AUC OvR    : 0.9508
+
+PATIENT-LEVEL REPORT
+              precision    recall  f1-score   support
+
+      NORMAL     0.9688    1.0000    0.9841        31
+          DR     1.0000    0.8333    0.9091         6
+         AMD     1.0000    1.0000    1.0000         1
+
+    accuracy                         0.9737        38
+   macro avg     0.9896    0.9444    0.9644        38
+weighted avg     0.9745    0.9737    0.9727        38
+
+Patient Balanced Accuracy: 0.9444
+
+IMAGE CM
+[[9343   79    2]
+ [ 424 1400    0]
+ [   7    0  297]]
+
+PATIENT CM
+[[31  0  0]
+ [ 1  5  0]
+ [ 0  0  1]]

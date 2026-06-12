@@ -1,0 +1,70 @@
+ResNet18 | OCT 3-Sinif | Final VS Code
+======================================================================
+
+Toplam goruntulu hasta: 193 / 195
+Eksik OCT hasta klasoru: ['10400', '10500']
+Image thresholds: [0.5, 0.25, 0.35]
+Patient thresholds: [0.5, 0.5, 0.5]
+
+IMAGE-LEVEL REPORT | ARGMAX
+              precision    recall  f1-score   support
+
+      NORMAL     0.9725    0.9863    0.9793      9424
+          DR     0.9237    0.8558    0.8884      1824
+         AMD     1.0000    1.0000    1.0000       304
+
+    accuracy                         0.9661     11552
+   macro avg     0.9654    0.9474    0.9559     11552
+weighted avg     0.9655    0.9661    0.9655     11552
+
+Balanced Accuracy: 0.9474
+Macro AUC OvR    : 0.9934
+
+IMAGE-LEVEL REPORT | THRESHOLD
+              precision    recall  f1-score   support
+
+      NORMAL     0.9828    0.9746    0.9787      9424
+          DR     0.8794    0.9112    0.8950      1824
+         AMD     0.9620    1.0000    0.9806       304
+
+    accuracy                         0.9653     11552
+   macro avg     0.9414    0.9619    0.9514     11552
+weighted avg     0.9659    0.9653    0.9655     11552
+
+Balanced Accuracy: 0.9619
+
+PATIENT-LEVEL REPORT | ARGMAX
+              precision    recall  f1-score   support
+
+      NORMAL     1.0000    1.0000    1.0000        31
+          DR     1.0000    1.0000    1.0000         6
+         AMD     1.0000    1.0000    1.0000         1
+
+    accuracy                         1.0000        38
+   macro avg     1.0000    1.0000    1.0000        38
+weighted avg     1.0000    1.0000    1.0000        38
+
+Patient Balanced Accuracy: 1.0000
+
+PATIENT-LEVEL REPORT | THRESHOLD
+              precision    recall  f1-score   support
+
+      NORMAL     1.0000    1.0000    1.0000        31
+          DR     1.0000    1.0000    1.0000         6
+         AMD     1.0000    1.0000    1.0000         1
+
+    accuracy                         1.0000        38
+   macro avg     1.0000    1.0000    1.0000        38
+weighted avg     1.0000    1.0000    1.0000        38
+
+Patient Balanced Accuracy: 1.0000
+
+IMAGE CM | THRESHOLD
+[[9185  228   11]
+ [ 161 1662    1]
+ [   0    0  304]]
+
+PATIENT CM | THRESHOLD
+[[31  0  0]
+ [ 0  6  0]
+ [ 0  0  1]]
